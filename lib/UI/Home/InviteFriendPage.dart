@@ -10,62 +10,62 @@ class InviteFriendPage extends StatefulWidget {
 class _InviteFriendPageState extends State<InviteFriendPage> {
   List<Map<String, dynamic>> contactsList = [
     {
-      "name": "Aman malik",
-      "number": 4651133152,
+      "name": "Alina ",
+      "number": 123456789,
       "image": "assets/images/profile10.png",
       "isInvited": false
     },
     {
-      "name": "Jay Patel",
-      "number": 8743113211,
+      "name": "Oleksii",
+      "number": 123456789,
       "image": "assets/images/profile9.png",
       "isInvited": true
     },
     {
-      "name": "Ammar Multani",
-      "number": 8645512231,
+      "name": "Vlada",
+      "number": 123456789,
       "image": "assets/images/profile8.png",
       "isInvited": false
     },
     {
-      "name": "Vraj donda",
-      "number": 6853121326,
+      "name": "Alexandre",
+      "number": 123456789,
       "image": "assets/images/profile7.png",
       "isInvited": true
     },
     {
-      "name": "Dhwani Kedar",
-      "number": 8676413132,
+      "name": "Yevhen",
+      "number": 123456789,
       "image": "assets/images/profile13.png",
       "isInvited": true
     },
     {
-      "name": "Tusha Mishra",
-      "number": 8654165131,
+      "name": "Semen",
+      "number": 123456789,
       "image": "assets/images/profile12.png",
       "isInvited": true
     },
     {
-      "name": "Dharmik Mali",
-      "number": 6941321561,
+      "name": "Nastya",
+      "number": 123456789,
       "image": "assets/images/profile11.png",
       "isInvited": true
     },
     {
-      "name": "Jash Shah",
-      "number": 4965166446,
+      "name": "Sofia",
+      "number": 123456789,
       "image": "assets/images/profile6.png",
       "isInvited": false
     },
     {
-      "name": "Kush Piter",
-      "number": 7894512119,
+      "name": "Dmytro",
+      "number": 123456789,
       "image": "assets/images/profile11.png",
       "isInvited": false
     },
     {
-      "name": "Kamal Hasan",
-      "number": 7852131158,
+      "name": "Heorhii",
+      "number": 123456789,
       "image": "assets/images/profile7.png",
       "isInvited": false
     },

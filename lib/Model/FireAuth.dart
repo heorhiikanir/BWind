@@ -20,19 +20,19 @@ class FireAuth {
           email: email, password: password);
       user = userCredential.user;
       await user!.updateDisplayName(name);
-      await user!.reload();
+      await user.reload();
       user = auth.currentUser;
 
       Userbase.insertUser(
           Userbase(
                   name: user!.displayName,
-                  email: user!.email,
+                  email: user.email,
                   password: password,
                   createTime: DateTime.now())
               .toMap(),
-          user!.uid);
+          user.uid);
 
-      user = userCredential!.user;
+      user = userCredential.user;
       return AuthResponse(
           user: user, msg: "Registered Successfully", code: true);
     } on FirebaseAuthException catch (e) {
@@ -55,7 +55,7 @@ class FireAuth {
     final auth = await FireAuth.auth;
     try {
       UserCredential userCredential = await auth.signInWithEmailAndPassword(
-          email: email, password: password!);
+          email: email, password: password);
       user = userCredential.user;
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
@@ -94,7 +94,7 @@ class FireAuth {
             await auth.signInWithCredential(_credential);
         User? user = userCredential.user;
         Userbase.insertUser(
-            Userbase(name: user!.displayName, email: user!.email).toMap(),
+            Userbase(name: user?.displayName, email: user?.email).toMap(),
             user!.uid);
         return AuthResponse(user: user, msg: "Login Successfull", code: true);
       } on FirebaseAuthException catch (e) {
@@ -136,7 +136,7 @@ class FireAuth {
         await Userbase.changePassword(
             Userbase(
                     name: user!.displayName,
-                    email: user!.email,
+                    email: user.email,
                     password: newPassword,
                     createTime: DateTime.now())
                 .toMap(),
